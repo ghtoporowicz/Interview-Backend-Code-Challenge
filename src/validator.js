@@ -37,14 +37,14 @@ const triangularMatrixValidate = matrix => {
         console.log('[ERROR] Is not a square Matrix');
         return false;
     }
-    
-    let upper = [];
-    let lower = [];
 
     if(!diagonalValidate(matrix)) {
         console.log('[ERROR] Diagonal contains zeros');
         return false;
     }
+
+    let upper = [];
+    let lower = [];
 
     for(let i = 0 ; i < matrix.length ; i++) {
         for(let j = 0 ; j < matrix.length ; j++) {
@@ -60,7 +60,6 @@ const triangularMatrixValidate = matrix => {
 
     return isLowerMatrix(upper, lower) || isUpperMatrix(upper, lower);
 }
-
 
 module.exports = {
     triangularMatrixValidate

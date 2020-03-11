@@ -25,7 +25,7 @@ test('Confirms that it is a triangular matrix (lower incorrect)', () => {
     expect(validator.triangularMatrixValidate(matrix)).toBe(false);
 });
 
-test('Confirms that it is a triangular matrix (lower incorrect)', () => {
+test('Confirms that it is a triangular matrix (upper incorrect)', () => {
     const matrix = [[1, 0, 1], [0, 6, 4], [0, 0, 1]];
     expect(validator.triangularMatrixValidate(matrix)).toBe(false);
 });
