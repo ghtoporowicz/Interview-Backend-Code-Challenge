@@ -1,4 +1,4 @@
-const validator = require('../validator')
+const validator = require('../authentitcation/validator')
 
 test('A not square matrix', () => {
     const matrix = [[1, 0, 0], [2, 8, 0], [4, 9, 7, 9]];
