@@ -3,7 +3,7 @@ const validator = require('./validator')
 const verifyRequest = (req, res, next) => {
     let access_token;
     try{
-        access_token = JSON.parse(req.headers.access_token);
+        access_token = JSON.parse(req.headers.unanimulli);
     }catch(error){
         console.error("I can't find access_token");
         res.status(401);
